@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Fitness Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+ /*Downloaded fonts  */ 
+
+@font-face{
+    src: url(font/Cinzel-VariableFont_wght.ttf);
+    font-family: Cinzel;
+}
+
+@font-face{
+    src: url(font/PermanentMarker-Regular.ttf);
+    font-family: Permark;
+}
+
+@font-face{
+    src: url(font/Rowdies-Regular.ttf);
+    font-family: Rowdies-Regular;
+}
+
+@font-face{
+    src: url(font/Rowdies-Light.ttf);
+    font-family: Rowdies-Light;
+}
+
+ /*  Styling and placement  */ 
+
+body{
+    background-color: rgb(250, 239, 239);
+    margin: 0px;
+
+}
+
+.navigator{
+    position: relative;
+    border-style: groove;
+    border-width: 1rem;
+    border-color: brown;
+    background-color: rgb(238, 225, 208);
+
+
+}
+
+.navigator img{
+    position: relative;
+    width: 18%;
+    margin-left: 3rem;
+    margin-top: 0rem;
+}
+
+.navigator h1{
+    font-family: Permark;
+    position: absolute;
+    color: rgba(224, 97, 12, 0.932);
+    margin-left: 30rem;
+    margin-top: -155px;
+    font-size: 4rem;
+}
+
+.body h1{
+    font-family: Rowdies-Regular;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    margin-top: -15rem;
+    margin-left: 28rem;
+    margin-right: 15rem;
+}
+
+.body img{
+    border-style: double;
+    height: 20%;
+    width: 11%;
+    margin-left: 150px;
+}
+
+.goal{
+    margin-top: 10px;
+    margin-left: 5rem;
+    margin-right: 35rem;
+}
+
+.goal h2{
+    font-family: Rowdies-Regular;
+}
+
+.goal li{
+    font-family: Rowdies-Light;
+    font-weight: 1rem;
+}
+#could{
+    margin-left: 3rem;
+}
+
+.goal img{
+    width: 10%;
+    height: 20%;
+    border-style: double;
+    position: absolute;
+    margin-left: 90rem;
+    margin-top: -15rem;
+}
+
+#image1{
+    position: absolute;
+    margin-top: -43rem;
+}
+
+#image2{
+    position: absolute;
+    margin-top: -29rem;
+}
+
+.diet{
+    margin-top: 10px;
+    margin-left: 30rem;
+    margin-right: 25rem;
+}
+.diet h2{
+    font-family: Rowdies-Regular;
+}
+
+.diet li{
+    font-family: Rowdies-Light;
+    font-weight: 1rem;
+}
+
+.diet h3{
+    font-family: Rowdies-Regular;
+}
+
+.work{
+    font-family: Rowdies-Regular;
+    margin-top: 10px;
+    margin-left: 25rem;
+    margin-right: 25rem;
+}
+
+.work li{
+    font-size: 20px
+
+}
+
+.about{
+    font-family: Rowdies-Regular;
+    margin-top: 10px;
+    margin-left: 25rem;
+    margin-right: 20rem;
+}
+
+.about h3{
+    font-family: Rowdies-Light;
+}
+
+.about img{
+    margin-left: 1rem;
+    border-style: double;
+}
+
+#bef{
+    position: absolute;
+    margin-left: 13rem;
+    margin-top: 17px;
+}
+
+#aft{
+    margin-left: 47rem;
+}
+
+.comment-section {
+    font-family: Rowdies-Regular;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+form {
+    margin-bottom: 20px;
+}
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #358dff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Rowdies-Light;
+}
+
+form input[type="submit"]:hover {
+    background-color: #4cfa29;
+}
+
+.comments-display {
+    margin-top: 20px;
+}
+
+.comment {
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+p{
+    font-family: Rowdies-Light;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Logo section -->
+    <div class="navigator">
+        <nav>
+        <img src="image/fitwell.png" alt="Logo">
+        <h1>"Your guide to the true wellness!"</h1>
+        </nav>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <!-- Body section -->
+    <div class="body">
+        <img src="image/colored.jpg">
+        <h1>Welcome to Fitness Wellness—your ultimate guide for achieving the body and health you’ve always dreamed of! I’m Dion, the creator of this blog, and my goal is to guide and motivate you every step of the way on your fitness journey. Whether you're just starting out, or you're looking to take your fitness to the next level, you’ll find tips, workouts, and advice tailored to help you reach your goals. Together, we’ll build a healthier, stronger version of yourself! Let's get started and transform your fitness journey today!</h1>    
+    </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr style="height:5px;border-width:0;color:gray;background-color:gray">
+<br>
+<br>
+<br>
+<!-- Goal section -->
+<div class="goal">
+    <h2>Before we begin our fitness journey, let's set your goals. Whether your focus is on weight loss, muscle gain, or improving endurance, clear objectives will guide your progress and keep you motivated. Let’s define your goals first!</h2>
+    <h2 id="could">Your goal could be:</h2>
+    <br>
+    <h2>1. For Weight Loss</h2>
+    <li>Achieve a Target Weight: Set a specific weight loss target, such as losing 10-15 pounds over the next 2-3 months. This goal can be broken down into smaller milestones, like losing 1-2 pounds per week, to maintain motivation and track progress.</li>
+    <li>Reduce Body Fat Percentage: Aim to decrease your body fat percentage by 5% within 3-6 months. Focus on combining strength training with cardio and a balanced diet to achieve this goal.</li>
+    <li>Establish Healthy Eating Habits: Commit to meal prepping and planning healthy meals to support your weight loss journey. Aim to prepare 3 healthy meals and 2 snacks per day, emphasizing whole foods, lean proteins, and plenty of fruits and vegetables.</li>
+    <br>
+    <br>
+    <h2>2. For Muscle Gain</h2>
+    <li>Increase Lean Muscle Mass: Set a goal to gain 5-10 pounds of muscle over the next 3-6 months. Incorporate a structured strength training program and ensure adequate protein intake to support muscle growth.</li>
+    <li>Lift Specific Weights: Aim to increase your strength in key lifts. For example, set a goal to bench press 150 pounds and squat 200 pounds within 12 weeks. Track your progress and adjust your training regimen accordingly.</li>
+    <li>Complete a Strength Training Program: Commit to a comprehensive strength training program (like a 5x5 program) for 8-12 weeks, focusing on progressive overload to continually challenge your muscles.</li>
+    <br>
+    <br>
+    <h2>3. For Endurance Strengthening</h2>
+    <li>Run a Specific Distance: Train to run a 5K (3.1 miles) within 8 weeks. Follow a structured running plan that gradually increases your distance each week to build endurance safely.</li>
+    <li>Improve Cardio Fitness: Set a goal to improve your cardiovascular fitness by completing a 30-minute steady-state cardio session (running, cycling, or swimming) at least 3 times per week. Track your heart rate to monitor improvements.</li>
+    <li>Participate in a Race: Sign up for a local race (like a 10K or half-marathon) to see your improvement.</li>
+    <br>
+    <h2>Following these will ensure change to your body for the better good!</h2>
+
+    <img id="image1" src="image/weightloss.jpg">
+    <img id="image2"  src="image/muscle.jpg">
+    <img id="image3" src="image/running.jpg">
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr style="height:5px;border-width:0;color:gray;background-color:gray">
+<br>
+<br>
+<!-- Diet plan section -->
+<div class="diet">
+    <h2>Calorie intake count and Diet Plan</h2>
+    <br>
+    <h3>For men, your ideal calorie intake depends on various factors, such as age and activity level. Most females at least 1,600 daily calories to maintain weight, while males may require at least 2,000. So in order to lose weight, eat less calories than what you usually eat. </h3>
+    <h2>Recommended Calorie Intake for Weight Loss</h2>
+    <h3>For weight loss, the general recommendation is to create a caloric deficit, which means consuming fewer calories than your body needs to maintain its current weight.</h3>
+    <li>For women: A typical daily intake for weight loss is around 1,200-1,500 calories.</li>
+    <li>For men: The recommended intake is around 1,500-1,800 calories.</li>
+    <p>The specific caloric needs will vary based on your starting weight, activity level, and goals. You can consult a nutritionist to personalize this further.</p>
+    <br>
+    <br>
+    <h2>A week diet plan for the Filipinos (you can improvise your own meal and use this as basis)</h2>
+    <br>
+    <h3>Day 1</h3>
+    <li>Breakfast: Champorado and 1 boiled egg.</li>
+    <li>Grilled tilapia or bangus with steamed kangkong and brown rice.</li>
+    <li>Chicken tinola with malunggay, papaya, and a small serving of brown rice.</li>
+    <br>
+    <h3>Day 2</h3>
+    <li>Scrambled eggs with tomatoes and spinach.</li>
+    <li>Sinigang na hipon with vegetables and 1 cup brown rice</li>
+    <li>Roasted pork or cooked with airfryer.</li>
+    <br>
+    <h3>Day 3</h3>
+    <li>Oatmeal with banana slices and a teaspoon of honey and boiled egg.</li>
+    <li>Ginisang ampalaya with scrambled eggs and 1 cup of brown rice.</li>
+    <li>Grilled chicken breast and 1 cup of brown rice.</li>
+    <br>
+    <h3>Day 4</h3>
+    <li>Breakfast: Smoothie made with banana, spinach, and almond milk</li>
+    <li>Tinolang manok (chicken tinola) with malunggay and 1 cup of brown rice</li>
+    <li>Grilled bangus belly and 1 cup of brown rice</li>
+    <br>
+    <h3>Day 5</h3>
+    <li>Breakfast: Lugaw (rice porridge) with egg, garlic, and some veggies</li>
+    <li>Pork menudo (use lean cuts) with steamed vegetables and 1 cup brown rice</li>
+    <li>Grilled tilapia with ginisang sayote and 1 cup brown rice</li>
+    <br>
+    <h3>Day 6</h3>
+    <li>Suman with mango slices and a drizzle of coconut milk</li>
+    <li>Adobong kangkong and 1 cup of brown rice</li>
+    <li>Fish tinola with pechay and a small portion of rice</li>
+    <br>
+    <h3>Day 7</h3>
+    <li>Omelette with tomatoes, onions, and spinach</li>
+    <li>Pinakbet with lean pork and shrimp and 1 cup of brown rice</li>
+    <li>Grilled shrimp skewers and roasted vegetables</li>
+    <br>
+    <br>
+    <br>
+    <h2>Foods to Avoid</h2>
+    <h3>1. Processed and Sugary Foods</h3>
+    <h3>2. Fried and Fast Foods</h3>
+    <h3>3. Salty Processed Foods:</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+<hr style="height:5px;border-width:0;color:gray;background-color:gray">
+<!--  Workout routine section-->
+<div class="work">
+    <h2>Exercise Routines</h2>
+    <h3>A. Strength Training</h3>
+    <h3>Strength training is a crucial aspect of any fitness routine, helping to build muscle, strengthen bones, and boost metabolism. Here are some essential exercises to get you started:</h3>
+    <li>Squats: Stand with feet shoulder-width apart, lower your body as if sitting in a chair, keeping your back straight. Aim for 3 sets of 10-15 reps.</li>
+    <li>Push-ups: Begin in a plank position, lower your body until your chest nearly touches the floor, then push back up. Modify by doing knee push-ups if needed. Aim for 3 sets of 8-12 reps.</li>
+    <li>Deadlifts: Using dumbbells or a barbell, hinge at the hips, keeping your back flat, and lift the weights by extending your hips and knees. Aim for 3 sets of 8-12 reps.</li>
+    <br>
+    <h2>B. Cardio</h2>
+    <h3>Cardiovascular exercise, or cardio, is essential for heart health and burning calories. Here are some benefits and types of cardio to consider:</h3>
+    <li>Running or Jogging: Great for building endurance and burning calories.</li>
+    <li>Cycling: Low-impact option that’s great for joint health.</li>
+    <li>High-Intensity Interval Training (HIIT): Short bursts of intense exercise followed by rest; highly effective for fat loss.</li>
+    <h2>C. Rest</h2>
+    <li>Muscle Recovery and Repair</li>
+    <h3>During exercise, especially strength training, tiny tears occur in your muscle fibers. Rest allows your body time to repair these tears, which leads to stronger and larger muscles. Without adequate rest, your muscles don’t have the chance to recover fully, which can lead to overtraining and hinder your progress.</h3>
+    <li>Preventing Injury</li>
+    <h3>Constant exercise without rest increases the risk of injury. Overworking your muscles and joints can cause strain, inflammation, and stress fractures. Rest days reduce this risk, allowing your body to heal and prevent overuse injuries.</h3>
+    <li>Improved Performance</li>
+    <h3>Rest is essential for restoring energy reserves. After intense workouts, your glycogen levels (the stored energy in muscles) are depleted. Rest helps replenish these energy stores, improving your performance in the next workout. Without proper rest, fatigue sets in, and you may not be able to perform at your best.</h3>
+</div>
+<br>
+<br>
+<br>
+<hr style="height:5px;border-width:0;color:gray;background-color:gray">
+<br>
+<br>
+<br>
+<div class="about">
+    <!-- My journey section -->
+    <h2>Hello again, I'm Dion, and I’m here to share my story of how I transformed my body and my life, losing 40kg—from 100kg to 60kg—in just one year.</h2>
+    <h3>My weight-loss journey wasn’t easy, but it was definitely worth every step. I want to tell you how I made it happen and inspire you to believe that it’s possible to achieve your goals, no matter how big they may seem.</h3>
+    <h3>I started my journey when I realized how much my weight was affecting my health and confidence. At 100kg, everyday tasks were a struggle, and I knew I needed a change. My goal was to lose 40kg, and though it seemed overwhelming, I broke it into smaller milestones.
+        The key changes I made were with my diet and exercise:I focused on eating whole foods—lean proteins, vegetables, and healthy fats—while staying in a caloric deficit.
+        For exercise, I combined strength training and cardio, working out 4-5 times a week.
+        There were tough moments when progress was slow, but I kept myself motivated by tracking my weight and celebrating small wins. After a year of dedication, I hit my goal and felt stronger, healthier, and more confident than ever.</h3>
+    <h2 id="bef">Before</h2>
+    <h2 id="aft">After</h2>
+    <br>
+    <img id="before" src="image/316528101_686054493092326_4993261486218585128_n (1).jpg">
+    <img id="after" src="image/after (1).jpg">
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+<br>
+<br>
+<hr style="height:5px;border-width:0;color:gray;background-color:gray">
+<br>
+<br>
+<br>
+<!-- Comment section -->
+    <div class="comment-section">
+        <h2>Leave a Comment</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required><br><br>
+
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Your comment" required></textarea><br><br>
+
+            <input type="submit" value="Post Comment">
+        </form>
+
+        <div class="comments-display">
+            <h3>Comments:</h3>
+            <div class="comment">
+                <p><strong>John Doe:</strong> I vouch that his method works!</p>
+            </div>
+            <div class="comment">
+                <p><strong>Jane Doe:</strong> I love this fitness blog, it really helped me!</p>
+            </div>
+        </div>
+    </div>
+<br>
+<br>
+<br>
+<br>
+<hr style="height:5px;border-width:0;color:gray;background-color:gray">
+</body>
+</html>
